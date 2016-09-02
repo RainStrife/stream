@@ -15,7 +15,6 @@ RUN mkdir /nginx && mkdir /config && mkdir /static && mkdir /data && cd /nginx \
  && make && make install
 
 ADD nginx.conf /config/nginx.conf
-ADD static /static
 VOLUME /logs
 CMD "nginx"
 
