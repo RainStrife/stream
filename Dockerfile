@@ -16,6 +16,7 @@ RUN mkdir /nginx && mkdir /config && mkdir /static && mkdir /data && cd /nginx \
 
 ADD nginx.conf /config/nginx.conf
 VOLUME /logs
+EXPOSE 1935
 CMD "nginx"
 
 
